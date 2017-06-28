@@ -11,15 +11,16 @@ $(document).ready(function() {
                 alert('Debes ingresar una tarea');
             } else {
                 // Si ingresan algo lo apendo
-                $('#comentarios').append('<input type="checkbox" id="task-completed" />' + '<label for="task-completed">' + task + '</label><br>');
+                $('#nueva-tarea').append('<div class="padre-input"><input type="checkbox" id="new-task" />' + '<label for="new-task" id="">' + task + '</label>' + '<a class="waves-effect btn btn-remover">Remover</a><br></div>');
             }
         }
+
+        // Remuevo las tareas
+        $('a').click(function() {
+            $(this).parent().remove();
+        });
     });
+
+
+
 });
-
-
-// '<div><span class="center-align">' + name + '</span><p class="center-align">' + message + '</p></div>'
-//      <input type="checkbox" id="task-completed" />
-
-
-// '<label for="task-completed">Task completed example</label>'

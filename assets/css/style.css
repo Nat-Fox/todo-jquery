@@ -6,10 +6,21 @@ body {
     background-color: #eceff1;
 }
 
+nav {
+    background-color: grey;
+}
+
 #card {
     margin-top: 35px;
 }
 
 .card {
     color: black
+}
+
+.btn {
+    background-color: grey;
+    height: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
