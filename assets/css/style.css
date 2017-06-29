@@ -18,9 +18,14 @@ nav {
     color: black
 }
 
-.btn {
+.btn-small {
     background-color: grey;
-    height: 35px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    color: white;
+    border: 1px solid grey;
+    width: 60px;
+    text-align: center;
+}
+
+.btn-small:hover {
+    background-color: #2bbbad;
 }

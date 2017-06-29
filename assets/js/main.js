@@ -14,7 +14,7 @@ $(document).ready(function() {
             } else {
                 var tareas = [];
                 // Si ingresan algo lo apendo                
-                var contenido = $('#nueva-tarea').append('<div class="padre-input"><input type="checkbox" id="new-task-' + contadorTareas + '"/>' + '<label for="new-task-' + contadorTareas + '">' + task + '</label>' + '<a class="waves-effect btn" id="new-task">Remover</a><br></div>');
+                var contenido = $('#nueva-tarea').append('<div class="padre-input"><input class="col s12" type="checkbox" id="new-task-' + contadorTareas + '"/>' + '<label for="new-task-' + contadorTareas + '">' + task + '</label>' + '<a class="right waves-effect btn-small" id="new-task"><i class="material-icons tiny center">delete</i></a><br></div>');
                 // Deja vacio el input luego de escribir en el 
                 $('#task').val('');
                 tareas.push(contenido);
@@ -23,8 +23,11 @@ $(document).ready(function() {
                 //console.log($('#new-task-' + contadorTareas));
                 $('#new-task-' + contadorTareas).click(function() {
                     var completado = $('#comentarios-realizados').append($(this).parent());
-                    //console.log(this.innerHTML)
+                    //console.log(this.innerHTML)    
                 });
+
+                // <i class="material-icons tiny icon-demo">
+
                 contadorTareas++;
             }
         }
